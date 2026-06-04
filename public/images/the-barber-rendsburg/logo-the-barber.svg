@@ -1,0 +1,15 @@
+<svg width="360" height="140" viewBox="0 0 360 140" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The Barber</title>
+  <desc id="desc">Vektorähnliche Ersatzmarke mit Barber-Silhouette und Schriftzug.</desc>
+  <g fill="#1A1714">
+    <path d="M61 27c-14.9 0-26 10.9-26 25.2v6.4c0 2.6 2.1 4.7 4.7 4.7h42.6c2.6 0 4.7-2.1 4.7-4.7v-6.4C87 37.9 75.9 27 61 27Z"/>
+    <path d="M38.4 49.9c2.3-16.5 11.2-24.8 26.8-24.8 10.8 0 20.3 5.2 24.8 13.7-5.8-3.1-13.2-5.1-22.2-5.1-13.4 0-22.7 5.6-29.4 16.2Z"/>
+    <path d="M33.7 61.8c-3.8.5-6.7 3.8-6.7 7.8 0 4.4 3.5 7.9 7.9 7.9h2.5c2.2 16 12.1 27 23.6 27s21.4-11 23.6-27h2.5c4.4 0 7.9-3.5 7.9-7.9 0-4-2.9-7.3-6.7-7.8v7.7c0 19.3-11.1 35-27.3 35s-27.3-15.7-27.3-35v-7.7Z"/>
+    <path d="M46.5 71.7c3.9 2.8 8.6 4.2 14.5 4.2s10.6-1.4 14.5-4.2c-.4 14.3-6.5 24.3-14.5 24.3S46.9 86 46.5 71.7Z"/>
+    <path d="M51.2 104.7h19.6c14.7 0 26.7 11.2 27.9 25.5H23.3c1.2-14.3 13.2-25.5 27.9-25.5Z"/>
+    <path d="M48.7 58.6c2.1-1.6 4.5-2.4 7.1-2.4 1.5 0 2.9.2 4.1.7 1.2-.5 2.6-.7 4.1-.7 2.6 0 5 .8 7.1 2.4-3 .9-6.4 1.4-10.1 1.4s-7.1-.5-10.3-1.4Z"/>
+  </g>
+  <path d="M118 38h210" stroke="#A8693D" stroke-width="2" stroke-linecap="round"/>
+  <text x="118" y="82" fill="#1A1714" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">The Barber</text>
+  <text x="121" y="105" fill="#123C2F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">RENDSBURG</text>
+</svg>
