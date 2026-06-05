@@ -84,9 +84,6 @@ export function ServicesSection() {
               <p className="blackboard-menu__eyebrow">The Barber Rendsburg</p>
               <h2>Unsere Preise</h2>
             </div>
-            <p className="blackboard-menu__intro">
-              Fiktive Auswahl zum Testen - echte Leistungen folgen.
-            </p>
 
             <div className="blackboard-menu__columns">
               <section aria-label="Einzelleistungen">
