@@ -879,12 +879,13 @@ summary::-webkit-details-marker {
 
 @media (prefers-reduced-motion: no-preference) {
   @supports (animation-timeline: view()) {
-    .section-reveal {
-      animation: section-reveal both ease-out;
-      animation-range: entry 8% cover 22%;
-      animation-timeline: view();
+    @media (min-width: 768px) {
+      .section-reveal {
+        animation: section-reveal both ease-out;
+        animation-range: entry 8% cover 22%;
+        animation-timeline: view();
+      }
     }
-
   }
 }
 
