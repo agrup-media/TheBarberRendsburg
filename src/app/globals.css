@@ -337,14 +337,6 @@ summary::-webkit-details-marker {
 }
 
 @media (max-width: 768px) {
-  :root {
-    --site-wood-background:
-      linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)),
-      url("/images/the-barber-rendsburg/mobile-wood-background.png");
-    --site-wood-background-position: center center;
-    --site-wood-background-size: cover;
-  }
-
   .wood-brand-title {
     display: grid;
     align-items: start;
@@ -977,14 +969,6 @@ summary::-webkit-details-marker {
   .hero-image {
     object-fit: cover;
     object-position: center top;
-  }
-
-  #start {
-    background:
-      linear-gradient(180deg, rgba(7, 31, 25, 0.1), rgba(7, 31, 25, 0.68)),
-      var(--site-wood-background);
-    background-position: center top;
-    background-size: cover;
   }
 
   .hero-scroll-indicator {
