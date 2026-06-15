@@ -14,7 +14,7 @@ const singleServices = [
   },
   {
     title: "Kinderhaarschnitt",
-    detail: "bis 12 Jahre",
+    detail: "bis 9 Jahre",
     price: "16 €",
   },
   {
