@@ -1,48 +1,66 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
+import { ConsentBanner } from "@/components/consent/ConsentBanner";
+import { GoogleAnalytics } from "@/components/consent/GoogleAnalytics";
+import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
 import "./globals.css";
-import { ChatbotWidget } from "@/components/ChatbotWidget";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { MobileStickyCta } from "@/components/MobileStickyCta";
-import { SiteScripts } from "@/components/SiteScripts";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://agrupmedia.de"),
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "black-translucent",
-    title: "AgRup Media"
+  title: {
+    default: "The Barber Rendsburg – Herrenfriseur & Barbershop",
+    template: "%s | The Barber Rendsburg",
+  },
+  description:
+    "Herrenhaarschnitt, Fade, Bartpflege und Konturen bei The Barber Rendsburg – seit 2021 an der Schiffbrücke 2.",
+  keywords: [
+    "The Barber Rendsburg",
+    "Herrenfriseur Rendsburg",
+    "Barbershop Rendsburg",
+    "Bartpflege Rendsburg",
+    "Fade Rendsburg",
+    "Konturen Rendsburg",
+  ],
+  openGraph: {
+    title: "The Barber Rendsburg – Herrenfriseur & Barbershop",
+    description:
+      "Herrenhaarschnitt, Fade, Bartpflege und Konturen bei The Barber Rendsburg – seit 2021 an der Schiffbrücke 2.",
+    locale: "de_DE",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  formatDetection: {
+    telephone: true,
+    address: true,
+    email: false,
   },
   icons: {
-    icon: "/assets/favicon.png",
-    apple: "/assets/apple-touch-icon.png"
-  }
-};
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  viewportFit: "cover",
-  themeColor: "#000000",
-  colorScheme: "dark"
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512x512.png", sizes: "512x512", type: "image/png" },
+      { url: "/assets/favicon.png?v=3", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" data-scroll-behavior="smooth">
+    <html lang="de">
       <body>
-        <div className="site">
-          <Header />
-          {children}
-          <Footer />
-        </div>
-        <MobileStickyCta />
-        <ChatbotWidget />
-        <SiteScripts />
+        <Header />
+        {children}
+        <Footer />
+        <ConsentBanner />
+        <GoogleAnalytics />
       </body>
     </html>
   );
