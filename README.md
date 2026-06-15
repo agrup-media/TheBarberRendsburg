@@ -1,51 +1,49 @@
-# The Barber Rendsburg
+# GitHub Austausch Dateien
 
-Moderne Website für den Herrenfriseur und Barbershop The Barber Rendsburg.
+## Welche Dateien geaendert wurden
 
-## Entwicklung
+- `src/app/layout.tsx`
+  - Bereinigter Layout-Stand ohne fehlerhaften Import `@/components/SiteScripts`.
+  - Alle Imports zeigen auf vorhandene Dateien unter `src/components/...`.
+- `src/components/sections/ServicesSection.tsx`
+  - Text beim Kinderhaarschnitt von `bis 12 Jahre` auf `bis 9 Jahre` geaendert.
+- `tsconfig.json`
+  - Alias geprueft: `@/*` zeigt auf `./src/*`, `@data/*` zeigt auf `./data/*`.
 
-```bash
-npm install
-npm run dev
-```
+## Welche Dateien neu erstellt wurden
 
-Die Seite läuft lokal unter `http://localhost:3000`.
+- Keine neuen technischen Projektdateien wurden erstellt.
+- Dieser Ordner `GITHUB_AUSTAUSCH_DATEIEN` ist nur ein lokales Upload-Paket.
 
-## Weitergabe
+## Welche Dateien ich bei GitHub ersetzen muss
 
-Die Projekt-ZIP enthält bewusst keine `node_modules` und keinen `.next`-Build-Cache.
-Nach dem Entpacken einmal `npm install` ausführen, danach kann die Seite mit
-`npm run dev` lokal gestartet oder mit `npm run build` geprüft werden.
+Bitte den Inhalt dieses Ordners bei GitHub an den gleichen Stellen ersetzen:
 
-## Checks
+- `src/`
+- `data/`
+- `public/`
+- `package.json`
+- `package-lock.json`
+- `tsconfig.json`
+- `next.config.ts`
+- `postcss.config.mjs`
+- `eslint.config.mjs`
+- `next-env.d.ts`
 
-```bash
-npm run lint
-npm run typecheck
-npm run build
-```
+Wichtig: Nicht `node_modules`, nicht `.next` und nicht `GITHUB_AUSTAUSCH_DATEIEN` selbst hochladen.
 
-## Zentrale Daten
+## Welche Dateien ich bei GitHub neu hinzufuegen muss
 
-- Stammdaten, Buchung, Adresse und Öffnungszeiten: `data/theBarber/siteConfig.ts`
-- Leistungen: `data/theBarber/services.ts`
-- Preise: `data/theBarber/pricing.ts`
-- Galerie: `data/theBarber/gallery.ts`
-- Reviews: `data/theBarber/reviews.ts`
+Falls sie in GitHub fehlen, neu hinzufuegen:
 
-## Buchung
+- alle Dateien aus `src/components/consent/`
+- alle Dateien aus `src/components/layout/`
+- alle Dateien aus `src/components/sections/`
+- alle Dateien aus `src/components/ui/`
+- alle Dateien aus `src/lib/`
+- alle Dateien aus `data/theBarber/`
 
-Solange `bookingUrl` leer ist, zeigt die Website "Termin anfragen" sowie Telefon
-und Instagram als Kontaktwege. Sobald ein Buchungslink eingetragen wird, wechselt
-der zentrale CTA auf "Online Termin buchen".
+## Build-Status
 
-## Assets
-
-Die Website erwartet echte Salonbilder unter:
-
-- `public/images/the-barber-rendsburg/salon-innenraum-stuehle.jpg`
-- `public/images/the-barber-rendsburg/salon-aussenansicht.jpg`
-- `public/images/the-barber-rendsburg/salon-lounge.jpg`
-- `public/images/the-barber-rendsburg/salon-produkte.jpg`
-
-Fehlende Bilder werden bewusst als vorbereitete Bildplätze dargestellt.
+- `npm run build` war erfolgreich.
+- Zusaetzlich wurden alle lokalen Alias-Imports auf Existenz und exakte Gross-/Kleinschreibung geprueft.
